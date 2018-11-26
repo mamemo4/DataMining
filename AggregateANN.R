@@ -107,8 +107,8 @@ predictions
 # [7]  16064387   4134030  -6564708
 
 # Average error
-# mean(test_set[,5] - new_predict)
-# [1] 54763.04
+# mean(abs(test_set[,5] - new_predict))
+#[1] 9789228
 
 # Predicting the training set
 train_predict <- h2o.predict(NN, newdata = as.h2o(training_set[-5]))
@@ -171,5 +171,5 @@ test
 # [36] -10486538.5  -9982814.0  -4306701.3
 
 # Average difference
-# mean(training_set[,5] -  train_predict)
-#[1] -486079.4
+#mean(abs(training_set[,5] -  train_predict))
+#[1] 9378236
