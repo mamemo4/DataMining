@@ -14,7 +14,7 @@ test_set[-5] <- scale(test_set[-5])
 
 # Here is the test_set:
 
-# GDP Births Unemp        SP GiftAmount
+#          GDP Births Unemp        SP GiftAmount
 # 3   5.263263   15.6   5.6  108.4517   145800.0
 # 8   4.608597   15.1   7.1   98.4950   306408.7
 # 13 -1.910891   15.9   9.7  118.7325  1074470.0
@@ -27,7 +27,7 @@ test_set[-5] <- scale(test_set[-5])
 
 # Here is the training_set
 
-# GDP Births Unemp         SP GiftAmount
+#            GDP Births Unemp         SP GiftAmount
 # 1   3.20680726   18.4   5.0   83.44333   170497.4
 # 2   3.29547673   17.2   6.0   97.41667    28835.0
 # 4   5.64312485   14.8   4.9  108.19000   141100.0
@@ -102,7 +102,7 @@ predictions
 # [8,] 29982072.8    25848043
 # [9,] 21199268.6    27763977
 
-# Here are the difference
+# Here are the differences
 # [1] -10296825 -10153942 -10080435  -6709183   7590519  16509025
 # [7]  16064387   4134030  -6564708
 
@@ -170,6 +170,6 @@ test
 # [31]   1610849.6   -585282.2  -4029192.2 -13064987.7  -8470061.0
 # [36] -10486538.5  -9982814.0  -4306701.3
 
-# Average difference
+# Average error
 #mean(abs(training_set[,5] -  train_predict))
 #[1] 9378236
